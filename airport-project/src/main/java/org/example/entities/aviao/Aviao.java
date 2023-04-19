@@ -6,6 +6,7 @@ import org.example.entities.aviao.componentes.Motor;
 import org.example.entities.pessoas.Piloto;
 
 import java.util.List;
+import java.util.Objects;
 
 public abstract class Aviao {
 
@@ -17,6 +18,8 @@ public abstract class Aviao {
     private Motor motor;
 
     private Piloto copiloto;
+
+    private boolean emEspera;
 
     public Integer getId() {
         return id;
@@ -64,5 +67,25 @@ public abstract class Aviao {
 
     public void setCopiloto(Piloto copiloto) {
         this.copiloto = copiloto;
+    }
+
+    public boolean isEmEspera() {
+        return emEspera;
+    }
+
+    public void setEmEspera(boolean emEspera) {
+        this.emEspera = emEspera;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aviao aviao)) return false;
+        return Objects.equals(id, aviao.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

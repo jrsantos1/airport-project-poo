@@ -2,9 +2,11 @@ package org.example.entities.aeroporto;
 
 import org.example.basecentral.BaseCentral;
 import org.example.entities.Voo;
+import org.example.entities.aviao.Aviao;
 import org.example.entities.hangar.Hangar;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Aeroporto {
 
@@ -12,7 +14,7 @@ public class Aeroporto {
     private List<Terminal> terminais;
     private List<Hangar> hangares;
 
-    private List<TorreControle> torreControles;
+    private TorreControle torreControle;
 
     private Integer id;
 
@@ -24,8 +26,29 @@ public class Aeroporto {
     //USAR OS RADARES DA TORRE DE CONTROLE
     private List<Radar> radares;
 
-    //VERIFICAR SE POSSUI AO MENOS UMA PISTA E UMA TORRE DE CONTROLE
+    //VERIFICA SE POSSUI AO MENOS UMA PISTA E UMA TORRE DE CONTROLE
+    public Aeroporto(Pista pista, TorreControle torreControle) throws Exception{
+        if(pista == null || torreControle == null){
+            throw new Exception("Necessário ter ao menos uma pista e uma torre de controle");
+        }
 
+        this.pistas.add(pista);
+        this.torreControle = torreControle;
+    }
+
+    public List<Voo> getAllVoos(){
+        return BaseCentral.getVoosRegistrados();
+    }
+
+    public void podeReceberVoo(Aviao aviao){
+        for(Pista p : pistas){
+            if(!p.pistaEstaCheia()){
+                p.setAviaoNaPista(aviao);
+                return;
+            }
+        }
+        aviao.setEmEspera(true);
+    }
 
     public List<Pista> getPistas() {
         return pistas;
@@ -51,12 +74,13 @@ public class Aeroporto {
         this.hangares = hangares;
     }
 
-    public List<TorreControle> getTorreControles() {
-        return torreControles;
+    public TorreControle getTorreControles() {
+        return torreControle;
     }
 
-    public void setTorreControles(List<TorreControle> torreControles) {
-        this.torreControles = torreControles;
+    public void setTorreControles(TorreControle torreControle) {
+        this.torreControle = torreControle;
+        this.radares = torreControle.getRadares();
     }
 
     public Integer getId() {
@@ -83,11 +107,15 @@ public class Aeroporto {
         this.baseCentral = baseCentral;
     }
 
-    public List<Radar> getRadares() {
-        return radares;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aeroporto aeroporto)) return false;
+        return Objects.equals(id, aeroporto.id);
     }
 
-    public void setRadares(List<Radar> radares) {
-        this.radares = radares;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

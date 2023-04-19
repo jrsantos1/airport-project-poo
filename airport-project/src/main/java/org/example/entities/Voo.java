@@ -1,5 +1,6 @@
 package org.example.entities;
 
+import org.example.basecentral.BaseCentral;
 import org.example.entities.aeroporto.Aeroporto;
 import org.example.entities.aviao.Aviao;
 import org.example.entities.pessoas.Passageiro;
@@ -13,11 +14,19 @@ public class Voo {
     private Aeroporto destino;
     private List<Passageiro> passageiro;
 
+    public void registrarVoo(){
+        BaseCentral.registrarVoo(this);
+    }
+
     public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Aeroporto getDestino() {
+        return destino;
     }
 }

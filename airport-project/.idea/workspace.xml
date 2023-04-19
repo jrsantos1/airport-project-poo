@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e4f532-b048-429f-aa87-e9fe1274df19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Link ER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/basecentral/BaseCentral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Radar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/AviaoAsaFixa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Helicoptero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/componentes/Combustivel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/componentes/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/Estacionamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/Hangar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/ManutencaoAeronaves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Passageiro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/basecentral/BaseCentral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/basecentral/BaseCentral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project",
     "onboarding.tips.debug.path": "C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project/src/main/java/org/example/Main.java"
   }
 }]]></component>
