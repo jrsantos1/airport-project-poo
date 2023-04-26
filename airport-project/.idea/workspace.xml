@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e4f532-b048-429f-aa87-e9fe1274df19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/basecentral/BaseCentral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/basecentral/BaseCentral.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/AviaoAsaFixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/AviaoAsaFixa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Helicoptero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Helicoptero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" afterDir="false" />
     </list>
@@ -32,19 +30,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Nz55nWofBNAuTzfp5B1Q4uZOfQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project",
-    "onboarding.tips.debug.path": "C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

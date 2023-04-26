@@ -6,8 +6,13 @@ public class Piloto {
     private Aviao aviao;
 
 
+    public Piloto(){
+
+    }
+
     public void solicitarPouso(){
         aviao.getVoo().getDestino().getTorreControles().aeroportoPodeReceberVoo(aviao);
 
     }
+
 }

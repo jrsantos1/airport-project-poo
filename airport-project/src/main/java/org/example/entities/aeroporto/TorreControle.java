@@ -2,6 +2,7 @@ package org.example.entities.aeroporto;
 
 import org.example.entities.aviao.Aviao;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -11,7 +12,7 @@ public class TorreControle {
 
     private List<Radar> radares;
 
-    private List<Controlador> controladores;
+    private List<Controlador> controladores = new ArrayList<>();
 
     private Aeroporto aeroporto;
 

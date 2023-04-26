@@ -5,6 +5,7 @@ import org.example.entities.Voo;
 import org.example.entities.aviao.Aviao;
 import org.example.entities.hangar.Hangar;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -31,7 +32,7 @@ public class Aeroporto {
         if(pista == null || torreControle == null){
             throw new Exception("Necessário ter ao menos uma pista e uma torre de controle");
         }
-
+        this.pistas = new ArrayList<>();
         this.pistas.add(pista);
         this.torreControle = torreControle;
     }
@@ -40,14 +41,15 @@ public class Aeroporto {
         return BaseCentral.getVoosRegistrados();
     }
 
-    public void podeReceberVoo(Aviao aviao){
+    public boolean podeReceberVoo(Aviao aviao){
         for(Pista p : pistas){
             if(!p.pistaEstaCheia()){
                 p.setAviaoNaPista(aviao);
-                return;
+                return true;
             }
         }
         aviao.setEmEspera(true);
+        return false;
     }
 
     public List<Pista> getPistas() {

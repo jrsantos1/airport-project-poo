@@ -14,6 +14,14 @@ public class Voo {
     private Aeroporto destino;
     private List<Passageiro> passageiro;
 
+    public Voo(Integer id, Aviao aviao, Aeroporto origem, Aeroporto destino, List<Passageiro> passageiro) {
+        this.id = id;
+        this.aviao = aviao;
+        this.origem = origem;
+        this.destino = destino;
+        this.passageiro = passageiro;
+    }
+
     public void registrarVoo(){
         BaseCentral.registrarVoo(this);
     }

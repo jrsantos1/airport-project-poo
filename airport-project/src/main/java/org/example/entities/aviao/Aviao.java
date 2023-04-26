@@ -1,6 +1,7 @@
 package org.example.entities.aviao;
 
 import org.example.entities.Voo;
+import org.example.entities.aeroporto.Aeroporto;
 import org.example.entities.aviao.componentes.Combustivel;
 import org.example.entities.aviao.componentes.Motor;
 import org.example.entities.pessoas.Piloto;
@@ -20,6 +21,17 @@ public abstract class Aviao {
     private Piloto copiloto;
 
     private boolean emEspera;
+
+    public Aviao(Integer id, Voo voo, List<Piloto> pilotos, Combustivel combustivel, Motor motor, boolean emEspera) {
+        this.id = id;
+        this.voo = voo;
+        this.pilotos = pilotos;
+        this.combustivel = combustivel;
+        this.motor = motor;
+        this.emEspera = emEspera;
+
+        //TODO: CRIAR LÓGICA PARA ADICIONAR O AVIAO A TODOS OS PILOTOS
+    }
 
     public Integer getId() {
         return id;
