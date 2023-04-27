@@ -6,6 +6,16 @@ public class Terminal {
 
     private Integer id;
 
+    private Aeroporto aeroporto;
+
+    public Terminal(Integer id){
+        this.id = id;
+    }
+
+    public void setAeroporto(Aeroporto aeroporto) {
+        this.aeroporto = aeroporto;
+    }
+
     public Integer getId() {
         return id;
     }

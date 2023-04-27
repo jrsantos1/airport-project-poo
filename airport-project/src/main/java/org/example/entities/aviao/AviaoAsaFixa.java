@@ -14,10 +14,9 @@ public class AviaoAsaFixa extends  Aviao{
     private Pista pistaDePouso;
     private Pista pistaDeDecolagem;
 
-    public AviaoAsaFixa(Integer id, Voo voo, List<Piloto> pilotos, Combustivel combustivel, Motor motor, Piloto copiloto, boolean emEspera) {
-        super(id, voo, pilotos, combustivel, motor, copiloto, emEspera);
+    public AviaoAsaFixa(Integer id, List<Piloto> pilotos, Combustivel combustivel, Motor motor, Piloto copiloto, boolean emEspera) {
+        super(id, pilotos, combustivel, motor, copiloto, emEspera);
     }
-
 
     public void setPistaDeDecolagem(Pista pistaDeDecolagem) {
         this.pistaDeDecolagem = pistaDeDecolagem;

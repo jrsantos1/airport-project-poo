@@ -10,6 +10,10 @@ public class Piloto {
 
     }
 
+    public void setAviao(Aviao aviao) {
+        this.aviao = aviao;
+    }
+
     public void solicitarPouso(){
         aviao.getVoo().getDestino().getTorreControles().aeroportoPodeReceberVoo(aviao);
 

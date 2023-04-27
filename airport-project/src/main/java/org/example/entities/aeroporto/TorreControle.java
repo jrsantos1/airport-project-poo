@@ -16,12 +16,17 @@ public class TorreControle {
 
     private Aeroporto aeroporto;
 
-    public TorreControle(Controlador controlador) throws Exception{
-        if(controlador == null){
+    public TorreControle(List<Controlador> controlador, List<Radar> radares) throws Exception{
+        if(controlador == null || radares.isEmpty() || radares == null){
             throw new Exception("A torre de controle precisa de ao menos um controlador");
         }
 
-        this.controladores.add(controlador);
+        this.controladores = controlador;
+        for (Controlador c: controlador) {
+            c.setTorreControle(this);
+        }
+
+        this.radares = radares;
     }
 
     public boolean aeroportoPodeReceberVoo(Aviao aviao){
@@ -45,6 +50,10 @@ public class TorreControle {
 
     public Aeroporto getAeroporto() {
         return aeroporto;
+    }
+
+    public void setAeroporto(Aeroporto aeroporto) {
+        this.aeroporto = aeroporto;
     }
 
     @Override

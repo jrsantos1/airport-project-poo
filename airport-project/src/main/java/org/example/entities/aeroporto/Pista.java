@@ -2,6 +2,7 @@ package org.example.entities.aeroporto;
 
 import org.example.entities.aviao.Aviao;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -11,6 +12,12 @@ public class Pista {
 
     private Aeroporto aeroporto;
     private List<Aviao> avioesNaPista;
+
+    public Pista(Integer id){
+        //PISTA COMEÇA SEM AVIOES
+        this.id = id;
+        this.avioesNaPista = new ArrayList<>();
+    }
 
 
     public Integer getId() {

@@ -20,6 +20,7 @@ public class Voo {
         this.origem = origem;
         this.destino = destino;
         this.passageiro = passageiro;
+        aviao.setVoo(this);
     }
 
     public void registrarVoo(){
@@ -36,5 +37,9 @@ public class Voo {
 
     public Aeroporto getDestino() {
         return destino;
+    }
+
+    public void setOrigem(Aeroporto origem) {
+        this.origem = origem;
     }
 }

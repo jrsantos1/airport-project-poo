@@ -35,6 +35,47 @@ public class Aeroporto {
         this.pistas = new ArrayList<>();
         this.pistas.add(pista);
         this.torreControle = torreControle;
+        this.torreControle.setAeroporto(this);
+    }
+
+    public Aeroporto(List<Pista> pistas, List<Terminal> terminais, List<Hangar> hangares, TorreControle torreControle, Integer id, BaseCentral baseCentral) throws Exception {
+        if(pistas == null || torreControle == null || pistas.isEmpty()){
+            throw new Exception("Necessário ter ao menos uma pista e uma torre de controle");
+        }
+        this.pistas = pistas;
+        for (Pista p: pistas) {
+            p.setAeroporto(this);
+        }
+
+        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
+        this.terminais = terminais;
+        for (Terminal t: terminais) {
+            t.setAeroporto(this);
+        }
+
+
+        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
+        this.hangares = hangares;
+        for (Hangar h: hangares) {
+            h.setAeroporto(this);
+        }
+
+
+
+        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
+        this.torreControle = torreControle;
+        torreControle.setAeroporto(this);
+
+        this.id = id;
+
+
+        this.baseCentral = baseCentral;
+
+        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
+        this.radares = torreControle.getRadares();
+        for (Radar r: radares) {
+            r.setAeroporto(this);
+        }
     }
 
     public List<Voo> getAllVoos(){

@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e4f532-b048-429f-aa87-e9fe1274df19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Voo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Aeroporto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Pista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Radar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Radar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aeroporto/TorreControle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Aviao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/AviaoAsaFixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/AviaoAsaFixa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Helicoptero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/aviao/Helicoptero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/Estacionamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/Estacionamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/Hangar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/Hangar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/ManutencaoAeronaves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/hangar/ManutencaoAeronaves.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/pessoas/Piloto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/Main.java" afterDir="false" />
     </list>
@@ -42,14 +50,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project",
+    "onboarding.tips.debug.path": "C:/Users/ronald.agarcia/Desktop/airport-project-poo/airport-project/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.project.Program" />
+      <module name="airport-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

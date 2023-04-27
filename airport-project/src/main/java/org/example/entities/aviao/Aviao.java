@@ -22,15 +22,18 @@ public abstract class Aviao {
 
     private boolean emEspera;
 
-    public Aviao(Integer id, Voo voo, List<Piloto> pilotos, Combustivel combustivel, Motor motor, boolean emEspera) {
+    public Aviao(Integer id, List<Piloto> pilotos, Combustivel combustivel, Motor motor, Piloto copiloto, boolean emEspera) {
         this.id = id;
-        this.voo = voo;
         this.pilotos = pilotos;
         this.combustivel = combustivel;
         this.motor = motor;
+        this.copiloto = copiloto;
         this.emEspera = emEspera;
 
         //TODO: CRIAR LÓGICA PARA ADICIONAR O AVIAO A TODOS OS PILOTOS
+        for(Piloto p : pilotos){
+            p.setAviao(this);
+        }
     }
 
     public Integer getId() {

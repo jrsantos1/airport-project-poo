@@ -9,8 +9,8 @@ import org.example.entities.pessoas.Piloto;
 import java.util.List;
 
 public class Helicoptero extends Aviao{
-    public Helicoptero(Integer id, Voo voo, List<Piloto> pilotos, Combustivel combustivel, Motor motor, Piloto copiloto, boolean emEspera) {
-        super(id, voo, pilotos, combustivel, motor, copiloto, emEspera);
+    public Helicoptero(Integer id, List<Piloto> pilotos, Combustivel combustivel, Motor motor, Piloto copiloto, boolean emEspera) {
+        super(id, pilotos, combustivel, motor, copiloto, emEspera);
     }
 
 }
