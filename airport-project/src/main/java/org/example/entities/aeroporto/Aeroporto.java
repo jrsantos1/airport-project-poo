@@ -27,42 +27,31 @@ public class Aeroporto {
     //USAR OS RADARES DA TORRE DE CONTROLE
     private List<Radar> radares;
 
-    //VERIFICA SE POSSUI AO MENOS UMA PISTA E UMA TORRE DE CONTROLE
-    public Aeroporto(Pista pista, TorreControle torreControle) throws Exception{
-        if(pista == null || torreControle == null){
-            throw new Exception("Necessário ter ao menos uma pista e uma torre de controle");
-        }
-        this.pistas = new ArrayList<>();
-        this.pistas.add(pista);
-        this.torreControle = torreControle;
-        this.torreControle.setAeroporto(this);
-    }
+    private String nome;
 
-    public Aeroporto(List<Pista> pistas, List<Terminal> terminais, List<Hangar> hangares, TorreControle torreControle, Integer id, BaseCentral baseCentral) throws Exception {
+    public Aeroporto(String name, List<Pista> pistas, List<Terminal> terminais, List<Hangar> hangares, TorreControle torreControle, Integer id, BaseCentral baseCentral) throws Exception {
         if(pistas == null || torreControle == null || pistas.isEmpty()){
             throw new Exception("Necessário ter ao menos uma pista e uma torre de controle");
         }
+        nome = name;
+
         this.pistas = pistas;
         for (Pista p: pistas) {
             p.setAeroporto(this);
         }
 
-        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
         this.terminais = terminais;
         for (Terminal t: terminais) {
             t.setAeroporto(this);
         }
 
 
-        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
         this.hangares = hangares;
         for (Hangar h: hangares) {
             h.setAeroporto(this);
         }
 
 
-
-        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
         this.torreControle = torreControle;
         torreControle.setAeroporto(this);
 
@@ -71,7 +60,6 @@ public class Aeroporto {
 
         this.baseCentral = baseCentral;
 
-        //TODO: FAZER VALIDAÇÃO DE NOT NULL E NOT EMPTY
         this.radares = torreControle.getRadares();
         for (Radar r: radares) {
             r.setAeroporto(this);
@@ -160,5 +148,10 @@ public class Aeroporto {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "Aeroporto: " + nome;
     }
 }

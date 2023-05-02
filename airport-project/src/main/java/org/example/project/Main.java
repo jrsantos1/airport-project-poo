@@ -1,49 +1,78 @@
 package org.example.project;
 
-import org.example.entities.aeroporto.Aeroporto;
-import org.example.entities.Voo;
-import org.example.entities.aeroporto.Controlador;
-import org.example.entities.aeroporto.Pista;
-import org.example.entities.aeroporto.TorreControle;
-import org.example.entities.aviao.Aviao;
-import org.example.entities.aviao.AviaoAsaFixa;
-import org.example.entities.aviao.componentes.Combustivel;
-import org.example.entities.aviao.componentes.Motor;
-import org.example.entities.pessoas.Passageiro;
+import org.example.basecentral.BaseCentral;
+import org.example.entities.aeroporto.*;
+import org.example.entities.hangar.Estacionamento;
+import org.example.entities.hangar.Hangar;
 import org.example.entities.pessoas.Piloto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-//
-//        try {
-//            //OBJETOS DE SAIDA DO AEROPORTO
-//            Controlador controlador1 = new Controlador();
-//            TorreControle torreControle = new TorreControle(controlador1);
-//            Pista pista1 = new Pista();
-//            Aeroporto saida = new Aeroporto(pista1, torreControle);
-//
-//            //OBJETOS DE DESTINO
-//            Controlador controlador2 = new Controlador();
-//            TorreControle torreControle2 = new TorreControle(controlador2);
-//            Pista pista2 = new Pista();
-//            Aeroporto destino = new Aeroporto(pista2, torreControle2);
-//
-//            Piloto piloto = new Piloto();
-//            List<Piloto> pilotos = new ArrayList<>();
-//            pilotos.add(piloto);
-//
-//            List<Passageiro> passageiros = new ArrayList<>();
-//
-//
-//            Aviao aviao = new AviaoAsaFixa(1, pilotos, new Combustivel(), new Motor(), piloto, false);
-//            Voo voo1 = new Voo(1, aviao, saida, destino, passageiros);
-//
-//            piloto.solicitarPouso();
-//        } catch (Exception e) {
-//            throw new RuntimeException(e);
-//        }
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        List<Aeroporto> aeroportos = new ArrayList<>();
+
+        int option = 0;
+        do {
+
+
+            System.out.println("------------------------------");
+            System.out.println("CENTRAL DE AEROPORTOS");
+            System.out.println("1 - crie um aeroporto");
+            System.out.println("2 - listar aeroportos");
+            option = scanner.nextInt();
+
+            switch (option){
+                case 1:
+                    Aeroporto aeroporto = criaAeroporto(scanner);
+                    aeroportos.add(aeroporto);
+                    break;
+                case 2:
+                    aeroportos.forEach(i -> System.out.println(i));
+            }
+        } while(option != 0);
+
     }
+
+    public static Aeroporto criaAeroporto(Scanner scanner) throws Exception {
+        scanner.nextLine();
+        System.out.println("Digite o nome do aeroporto: ");
+        String name = scanner.nextLine();
+
+        System.out.println("Digite o código da pista: ");
+        List<Pista> pistas = new ArrayList<>();
+        Pista pista1 = new Pista(scanner.nextInt());
+
+        System.out.println("Digite o código do terminal: ");
+        List<Terminal> terminais = new ArrayList<>();
+        terminais.add(new Terminal(scanner.nextInt()));
+
+        System.out.println("Digite o código do hangar: ");
+        List<Hangar> hangares = new ArrayList<>();
+        hangares.add(new Estacionamento(scanner.nextInt()));
+
+        System.out.println("Digite o código do controlador: ");
+        Controlador c1 = new Controlador(scanner.nextInt());
+        List<Controlador> controladores = new ArrayList<>();
+        controladores.add(c1);
+
+        System.out.println("Digite o código do radar: ");
+        Radar radar = new Radar(scanner.nextInt());
+        List<Radar> radars = new ArrayList<>();
+        radars.add(radar);
+
+        System.out.println("Digite o código da Torre de controle: ");
+        TorreControle torreControle = new TorreControle(scanner.nextInt(), controladores, radars);
+
+        pistas.add(pista1);
+
+        Aeroporto aeroporto = new Aeroporto(name, pistas, terminais, hangares, torreControle, 1, new BaseCentral());
+
+        return aeroporto;
+
+    }
+
 }

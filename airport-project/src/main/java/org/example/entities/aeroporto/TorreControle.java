@@ -16,11 +16,12 @@ public class TorreControle {
 
     private Aeroporto aeroporto;
 
-    public TorreControle(List<Controlador> controlador, List<Radar> radares) throws Exception{
+    public TorreControle(int id, List<Controlador> controlador, List<Radar> radares) throws Exception{
         if(controlador == null || radares.isEmpty() || radares == null){
             throw new Exception("A torre de controle precisa de ao menos um controlador");
         }
 
+        this.id = id;
         this.controladores = controlador;
         for (Controlador c: controlador) {
             c.setTorreControle(this);

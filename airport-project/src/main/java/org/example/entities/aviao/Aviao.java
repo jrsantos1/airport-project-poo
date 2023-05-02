@@ -30,10 +30,11 @@ public abstract class Aviao {
         this.copiloto = copiloto;
         this.emEspera = emEspera;
 
-        //TODO: CRIAR LÓGICA PARA ADICIONAR O AVIAO A TODOS OS PILOTOS
         for(Piloto p : pilotos){
             p.setAviao(this);
         }
+
+        copiloto.setAviao(this);
     }
 
     public Integer getId() {
