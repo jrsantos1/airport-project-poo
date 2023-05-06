@@ -81,6 +81,7 @@ public class Aeroporto {
         return false;
     }
 
+
     public List<Pista> getPistas() {
         return pistas;
     }
@@ -136,6 +137,10 @@ public class Aeroporto {
 
     public void setBaseCentral(BaseCentral baseCentral) {
         this.baseCentral = baseCentral;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     @Override
